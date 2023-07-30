@@ -21,9 +21,12 @@ export default function RangeSlider({ range, setRange }: RangePropType) {
 
   return (
     <div className="grid grid-cols-2">
-      <p className="text-normal md:text-body col-span-1 self-center">
+      <label
+        htmlFor="range"
+        className="text-normal md:text-body col-span-1 self-center"
+      >
         Character Length
-      </p>
+      </label>
       <p className="text-heading-m md:text-heading-l text-accent-green text-right col-start-2">
         {range}
       </p>
@@ -31,6 +34,7 @@ export default function RangeSlider({ range, setRange }: RangePropType) {
         type="range"
         min="0"
         max="20"
+        id="range"
         className="col-span-full mt-[18px] md:mt-[28px]  mb-[10px]"
         ref={rangeRef}
         value={range}

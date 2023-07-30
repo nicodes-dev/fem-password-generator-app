@@ -95,7 +95,7 @@ input[type='number'] {
 
 @layer base {
   #root {
-    @apply grid bg-neutral-900 min-h-screen md:place-content-center justify-center md:gap-y-8;
+    @apply grid bg-[hsl(250,18%,7%)] min-h-screen justify-center md:gap-y-8;
   }
 }
 
@@ -201,7 +201,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-height: 840px) and (min-width: 768px) {
+@media only screen and (min-height: 900px) and (min-width: 768px) {
   footer {
     display: block;
     position: absolute;

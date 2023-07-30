@@ -56,7 +56,7 @@ export default function App() {
   }
   return (
     <>
-      <main className="pt-16 px-4 md:pt-0 md:pb-0 text-neutral-300 grid place-content-start md:place-content-center justify-center gap-y-4 md:gap-y-6">
+      <main className="pt-16 px-4 md:pt-[133px] md:pb-0 text-neutral-300 grid place-content-start  justify-center gap-y-4 md:gap-y-6">
         <h1 className="text-center text-neutral-500 text-normal md:text-heading-m md:mb-[7px]">
           Password Generator
         </h1>
@@ -78,6 +78,7 @@ export default function App() {
             className="relative flex gap-x-4 items-center"
             onClick={copyPassword}
             disabled={hasFade}
+            aria-label="copy"
           >
             <span
               ref={copyRef}
