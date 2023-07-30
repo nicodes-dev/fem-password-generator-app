@@ -179,7 +179,7 @@ export default function useGeneratePassword(
 
     return dispatch({
       type: REDUCER_ACTION_TYPE.SET_ERROR,
-      payload: 'MAY MALI',
+      payload: 'an error has occured',
     })
   }, [
     dispatch,
