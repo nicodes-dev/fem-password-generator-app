@@ -37,22 +37,24 @@ export default function Checkbox({
           className="checkbox"
           checked={includeUppercase}
           onChange={() => setIncludeUppercase(prevValue => !prevValue)}
+          id="uppercase"
         />
 
-        <span className="text-normal md:text-body">
+        <label htmlFor="uppercase" className="text-normal md:text-body">
           Include Uppercase Letters
-        </span>
+        </label>
       </div>
       <div className="flex gap-x-5">
         <input
           type="checkbox"
           className="checkbox"
+          id="lowercase"
           checked={includeLowercase}
           onChange={() => setIncludeLowercase(prevValue => !prevValue)}
         />
-        <span className="text-normal md:text-body">
+        <label htmlFor="lowercase" className="text-normal md:text-body">
           Include Lowercase Letters
-        </span>
+        </label>
       </div>
       <div className="flex gap-x-5">
         <input
@@ -60,8 +62,11 @@ export default function Checkbox({
           className="checkbox"
           checked={includeNumbers}
           onChange={() => setIncludeNumbers(prevValue => !prevValue)}
+          id="numbers"
         />
-        <span className="text-normal md:text-body">Include Numbers</span>
+        <label htmlFor="numbers" className="text-normal md:text-body">
+          Include Numbers
+        </label>
       </div>
       <div className="flex gap-x-5">
         <input
@@ -69,8 +74,11 @@ export default function Checkbox({
           className="checkbox"
           checked={includeSymbols}
           onChange={() => setIncludeSymbols(prevValue => !prevValue)}
+          id="symbols"
         />
-        <span className="text-normal md:text-body">Include Symbols</span>
+        <label htmlFor="symbols" className="text-normal md:text-body">
+          Include Symbols
+        </label>
       </div>
     </div>
   )
