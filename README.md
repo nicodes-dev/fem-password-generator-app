@@ -50,4 +50,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@nicodes-dev](https://www.frontendmentor.io/profile/nicodes-dev)
-- - Twitter - [@nicodesdev](https://twitter.com/nicodesdev)
+- Twitter - [@nicodesdev](https://twitter.com/nicodesdev)
